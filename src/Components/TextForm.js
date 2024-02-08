@@ -12,11 +12,14 @@ export default function TextForm(props)
     const handleOnChange= (event)=>{
             setText(event.target.value);
     }
+    const handleOnChange= (event)=>{
+        setText(event.target.value);
+}
 
 
 
     const [text, setText]=useState('');
-// text="dipak"  wrong way to update text
+// text="dipak"  wrong way to update text xhsx
 // setText("dipak") correct way to update
 
     return (
