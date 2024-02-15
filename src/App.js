@@ -4,7 +4,7 @@ import Alert from './Components/Alert';
 import Navbar from './Components/Navbar';
 import TextForm from './Components/TextForm';
 import React, { useState } from 'react'
-import { BrowserRouter as Router, Route, Link, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
 function App() {
   const [mode, setmode] = useState('light'); //wether enable or not 
   const [alert, setAlert] = useState(null);
@@ -49,7 +49,7 @@ function App() {
       {/* Routes component for handling route definitions */}
       <Routes>
         {/* Route for About page */}
-        <Route path="/about" element={<About />} />
+        <Route path="/about" element={<About  mode={mode}/>} />
         
         {/* Default route for home page */}
         <Route path="/" element={<TextForm showalert={showalert} heading="Enter the text to analyze" mode={mode} />} />
